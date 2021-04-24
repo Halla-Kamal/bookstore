@@ -6,5 +6,18 @@ import '../sass/main.scss';
 import '@fortawesome/fontawesome-free/js/all.min.js';
 
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    // tooltip-cart-icon
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // scroll
+    $("a.scroll").on('click', function (event) {
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - 12
+        }, 800, function () {});
+
+    });
+
 });

@@ -1,12 +1,12 @@
 @import './variables';
 
 @font-face {
-    font-family: "cairoFont";
-    src: url(../fonts/Cairo-Regular.ttf);
+    font-family: "tajwalFont";
+    src: url(../fonts/Tajawal-Regular.ttf);
 }
 
 body {
-    font-family: "cairoFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
+    font-family: "tajwalFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
 }
 
 .container-fluid {
@@ -18,8 +18,8 @@ body {
 .top-menu {
     .navbar {
         font-weight: 600;
-        padding: 7px 100px !important;
-        background-color: #FFF !important;
+        padding: 3px 100px !important;
+        // background-color: #FFF !important;
     }
 
     .logo-name {
@@ -42,19 +42,96 @@ body {
         }
     }
 
-    .cart-icon {
+    .icon {
         border: 1px solid $muted-color;
+        width: 45px;
+        height: 40px;
 
         &:hover,
         &:active,
         &:focus {
+            color: $main-color !important;
             border: 1px solid $main-color;
-            background-color: #FFF !important;
+            background-color: $bg-color !important;
+            box-shadow: 0px 1px 7px 0px #a9a9a9;
         }
     }
 
     .active a {
         color: $main-color !important;
         border-bottom: 1px solid $main-color;
+    }
+}
+
+.carousel-top {
+    .row {
+        display: block !important;
+    }
+
+    .carousel {
+        .carousel-item {
+            img {
+                height: 525px;
+            }
+
+            .overlay {
+                position: absolute;
+                background-color: rgba(65, 155, 155, 0.5);
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+
+                display: flex !important; // للتحكم في موقع الكلام
+                flex-flow: column;        // لترتيب العناصر عمودياً
+                align-items: center;      // التوسيط بشكل افقي 
+                justify-content: center;  // التوسيط بشكل عمودي
+                z-index: 1;
+            }
+        }
+
+        .carousel-indicators {
+            li {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin: 20px 5px 30px 0px;
+
+                &.active {
+                    background-color: $main-color;
+                }
+            }
+        }
+
+        .carousel-caption {
+            h1 {
+                font-weight: bold;
+                color: white;
+                margin-bottom: 50px;
+            }
+
+            h4 {
+                width: 60%;
+                color: $bg-color;
+                line-height: 2em;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 767px) {
+    .top-menu {
+        .navbar {
+            padding: 20px 60px !important;
+
+            .navbar-nav {
+                a {
+                    border-bottom: none !important;
+                    padding-right: 5px;
+                }
+            }
+        }
     }
 }
