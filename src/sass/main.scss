@@ -15,6 +15,29 @@ body {
     overflow-x: hidden;
 }
 
+.icon {
+    border: 1px solid $muted-color;
+    width: 45px;
+    height: 40px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $main-color !important;
+        border: 1px solid $main-color;
+        background-color: $bg-color !important;
+        box-shadow: 0px 1px 7px 0px #a9a9a9;
+        cursor: pointer;
+    }
+}
+
+.title {
+    color: $main-color;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
 .top-menu {
     .navbar {
         font-weight: 600;
@@ -38,22 +61,8 @@ body {
                 color: $main-color !important;
                 background-color: $bg-color;
                 border-bottom: 1px solid $main-color;
+                cursor: pointer;
             }
-        }
-    }
-
-    .icon {
-        border: 1px solid $muted-color;
-        width: 45px;
-        height: 40px;
-
-        &:hover,
-        &:active,
-        &:focus {
-            color: $main-color !important;
-            border: 1px solid $main-color;
-            background-color: $bg-color !important;
-            box-shadow: 0px 1px 7px 0px #a9a9a9;
         }
     }
 
@@ -83,9 +92,9 @@ body {
                 width: 100%;
 
                 display: flex !important; // للتحكم في موقع الكلام
-                flex-flow: column;        // لترتيب العناصر عمودياً
-                align-items: center;      // التوسيط بشكل افقي 
-                justify-content: center;  // التوسيط بشكل عمودي
+                flex-flow: column; // لترتيب العناصر عمودياً
+                align-items: center; // التوسيط بشكل افقي 
+                justify-content: center; // التوسيط بشكل عمودي
                 z-index: 1;
             }
         }
@@ -120,8 +129,49 @@ body {
     }
 }
 
+.features {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
 
-@media (max-width: 767px) {
+    .img {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .features-overlay {
+        background-color: rgba(0,0,0, 0.3);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+
+        display: flex !important;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+
+        padding: 30px;
+        color: $bg-color;
+        font-weight: 600;
+        font-size: 110%;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        &:hover {
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
+
+@media (max-width: 991px) {
     .top-menu {
         .navbar {
             padding: 20px 60px !important;
