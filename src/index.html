@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>كُتبك | الصفحة الرئيسية</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="120">
@@ -48,7 +49,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link scroll m-1" href="#contact">
+                                <a class="nav-link scroll m-1" href="#contact-us">
                                     تواصل معنا
                                 </a>
                             </li>
@@ -142,7 +143,7 @@
                                                         <span class="d-md-none d-lg-block d-sm-block">تصفح الكتاب</span>
                                                         <i class="fas fa-book-open mt-1 mr-1"></i>
                                                     </a>
-                                                    <a class="btn btn-secondary custom-cart-icon icon d-flex justify-content-center"
+                                                    <a class="btn btn-secondary custom-cart-icon icon add-alert d-flex justify-content-center"
                                                         id="btn-cart" href=".">
                                                         <span class="d-md-none d-lg-block d-sm-block">إضافة
                                                             للعربة</span>
@@ -176,7 +177,7 @@
                                                         <span class="d-md-none d-lg-block d-sm-block">تصفح الكتاب</span>
                                                         <i class="fas fa-book-open mt-1 mr-1"></i>
                                                     </a>
-                                                    <a class="btn btn-secondary custom-cart-icon icon d-flex justify-content-center"
+                                                    <a class="btn btn-secondary custom-cart-icon add-alert icon d-flex justify-content-center"
                                                         id="btn-cart" href=".">
                                                         <span class="d-md-none d-lg-block d-sm-block">إضافة
                                                             للعربة</span>
@@ -210,7 +211,7 @@
                                                         <span class="d-md-none d-lg-block d-sm-block">تصفح الكتاب</span>
                                                         <i class="fas fa-book-open mt-1 mr-1"></i>
                                                     </a>
-                                                    <a class="btn btn-secondary custom-cart-icon icon d-flex justify-content-center"
+                                                    <a class="btn btn-secondary custom-cart-icon icon add-alert d-flex justify-content-center"
                                                         id="btn-cart" href=".">
                                                         <span class="d-md-none d-lg-block d-sm-block">إضافة
                                                             للعربة</span>
@@ -244,7 +245,7 @@
                                                         <span class="d-md-none d-lg-block d-sm-block">تصفح الكتاب</span>
                                                         <i class="fas fa-book-open mt-1 mr-1"></i>
                                                     </a>
-                                                    <a class="btn btn-secondary custom-cart-icon icon d-flex justify-content-center"
+                                                    <a class="btn btn-secondary custom-cart-icon icon add-alert d-flex justify-content-center"
                                                         id="btn-cart" href=".">
                                                         <span class="d-md-none d-lg-block d-sm-block">إضافة
                                                             للعربة</span>
@@ -280,8 +281,93 @@
                 </div>
             </div>
         </section>
+        <!-- contact-us -->
+        <section id="contact-us">
+            <div class="title text-center">
+                <h2>تواصل معنا</h2>
+            </div>
+            <div class="contact-us">
+                <div class="overlay-contact-us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="map" id="map">
+                                    <iframe class="iframe"
+                                        src="https://maps.google.com/maps?q=%D8%B9%D9%85%D8%A7%D8%B1%20%D8%A8%D9%86%20%D9%8A%D8%A7%D8%B3%D8%B1%D8%8C%20%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B1%D8%8C%20%D9%82%D8%B3%D9%85%20%D8%A7%D9%84%D9%86%D8%B2%D9%87%D8%A9%D8%8C%20%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%E2%80%AC%D8%8C%20%D9%85%D8%B5%D8%B1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        width="500" height="240" frameborder="0" style="border:0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <ul class="list-unstyled contact-list">
+                                    <li>
+                                        <i class="fa fa-map-marker custom-contact-us-icon btn" aria-hidden="true"></i>
+                                        <span class="contact-text pb-4">مصر - القاهره - شارع المطار.</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone custom-contact-us-icon btn" aria-hidden="true"></i>
+                                        <span class="contact-text pb-4">02-445666633</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope custom-contact-us-icon btn" aria-hidden="true"></i>
+                                        <span class="contact-text pb-4">kotobak@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="overlay-footer">
+                <div class="footer-body">
+                    <div class="container">
+                        <div class="row justify-content-center mx-auto">
+                            <div class="col-sm-12 col-md-6">
+                                <form id="newsletter">
+                                    <label>اشترك في النشرة البريدية</label>
+                                    <div class="input-group">
+                                        <input type="email" name="email" id="footer-email"
+                                            class="form-control text-right" required placeholder="..البريد الإلكتروني">
+                                        <button type="submit" class="icon custom-footer-icon">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <label>تابعنا</label>
+                                <ul class="follow list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="facebook btn icon custom-footer-icon rounded">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="twitter btn icon custom-footer-icon rounded">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="instagram btn icon custom-footer-icon rounded">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="copyright">
+                        جميع الحقوق محفوظة <span id="date"></span> &copy;
+                    </p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <h1 style="height:500px;"></h1>
 </body>
 
 </html>

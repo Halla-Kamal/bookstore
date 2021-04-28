@@ -20,5 +20,13 @@ $(function () {
 
     });
 
+    // add-to-cart-alert
+    $('.add-alert').on("click", function () {
+        alert('تمت إضافة الكتاب إلى عربة الشراء بنجاح.');
+    });
 });
 
+// copyright date update
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById("date").innerHTML = year;
