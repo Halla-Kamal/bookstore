@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>كُتبك | عن الكتاب</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Top-menu -->
+        <section class="top-menu">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+
+                    <div class="d-flex">
+                        <button class="navbar-toggler icon btn" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <a href="#" class="navbar-toggler btn icon mr-1 pt-2" title="عربة الشراء" data-toggle="tooltip"
+                            data-placement="left">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    <a href="index.html" class="navbar-brand p-0 d-flex">
+                        <img src="images/logo.png" alt="كُتبك" width="90" height="60">
+                        <h3 class="logo-name pt-3 mr-2">كُتُبَّك</h3>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link scroll m-1" href="index.html">
+                                    الصفحة الرئيسية
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link scroll m-1" href="#book-info">
+                                    عن الكتاب
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll m-1" href="#contact-us">
+                                    تواصل معنا
+                                </a>
+                            </li>
+                            <li class="d-none d-lg-block mt-1 mx-4">
+                                <a href="#" class="btn icon" title="عربة الشراء" data-toggle="tooltip"
+                                    data-placement="left">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- book-info -->
+        <div class="book-info" id="book-info">
+            <div class="title text-center">
+                <h2>عن الكتاب</h2>
+            </div>
+            <div class="row col no-gutters p-0">
+                <!-- images section -->
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="container-fluid book-img p-0">
+                        <div class="overlay-book-img">
+                            <section class="carousel-book">
+                                <div id="carousel-book-img" class="carousel" data-ride="false">
+                                    <div class="carousel-inner" data-toggle="modal" data-target="#bookModal">
+                                        <div class="carousel-item active">
+                                            <img src="images/book1/freelance-1.png" alt="book1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/book1/freelance-2.png" alt="book1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/book1/freelance-3.png" alt="book1">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/book1/freelance-4.png" alt="book1">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-indicators custom-book-img-indicators">
+                                        <img src="images/book1/freelance-1.png" alt="book1"
+                                            data-target="#carousel-book-img" data-slide-to="0" class="active">
+                                        <img src="images/book1/freelance-2.png" alt="book1"
+                                            data-target="#carousel-book-img" data-slide-to="1">
+                                        <img src="images/book1/freelance-3.png" alt="book1"
+                                            data-target="#carousel-book-img" data-slide-to="2">
+                                        <img src="images/book1/freelance-4.png" alt="book1"
+                                            data-target="#carousel-book-img" data-slide-to="3">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!-- text section -->
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="container-fluid book-text p-0">
+                        <div class="overlay-book-text">
+                            <div class="book-name d-flex mb-3">
+                                <i class="fas fa-book-open text-icon"></i>
+                                <span class="font-weight-bold text pt-2">طريقك للعمل الحر عبر الإنترنت</span>
+                            </div>
+                            <div class="auther-name d-flex mb-3">
+                                <i class="fas fa-user text-icon"></i>
+                                <span class="font-weight-bold text pt-2">أمير شَّراب</span>
+                            </div>
+                            <div class="abstract d-flex mb-3">
+                                <i class="fas fa-poll-h text-icon"></i>
+                                <span class="font-weight-bold text pt-2">نبذة مختصرة:</span>
+                            </div>
+                            <div class="about-paragraph px-3 py-1 mb-3">
+                                <p>يبدأ الكتاب بتعريفِ العمل الحرّ، ومجالاتِه، ومُميّزاتهِ وعُيوبِه. ثمّ يُرشِدُكَ إِلى
+                                    الكيفيّةِ التي تَبدأُ بِها عملكَ الحُرّ بخطواتٍ بسيطةٍ وسهلةِ التّطبيق. ويُتابِع معك
+                                    هذِه الخُطوات خُطوة بخطوة. فيقدّم لكَ النَّصائِحَ حولَ إِنشاءِ ملفِّكَ الشّخصيّ،
+                                    ويُحدثك عَن الطّريقة التي تُقدّمُ بها عروضَ العمل، ويُعلّمكَ كيفيّة تحديدِ السِّعرِ
+                                    المُناسِب للمشروع، وكيفيّة تَقدير الزّمن اللّازِم لتنفيذه. ويُواسيكَ في حال عدمِ
+                                    حُصولِكُ عُلى مَشاريع.
+
+                                    يَعرضُ الكتابُ عَددًا مِنَ المَهاراتِ اللّازِمة للعَملِ الحُرّ عبرَ الأنترنت،
+                                    فيستعرضُ مهاراتِ التّواصلِ معَ الزّبائن، ومهاراتِ التّفاوُضِ والإِقْناعْ، ومهاراتِ
+                                    إدارةِ وتنظيمِ الوقتْ.الكتابُ لا يَدّعي أنّهُ المرجعُ الشاملُ لكلِّ ما لهُ علاقةٌ
+                                    بالعملِ الحُرّ، إنَّما يرجو مُؤلّفُ الكتابِ أنْ تَكونَ كلماتُهُ قُد لامستْ مَواطنَ
+                                    الإرادةِ فِي قَلبك. وفُصولَه قدْ شَقّتْ لكَ طريقًا واضحًا للعملِ الحرِّ عبر
+                                    الأنترنت. وأن يَكونَ ركيزةَ البدايةِ والخُطوة الأولَى في عملكَ عبْر الأنْترنَت.
+
+                                    أُمنِيَتُنا في هَذا الكِتاب، أَنْ تَكونَ قِصّةَ نجاحٍ ملهمةً يُحتَفَى بِها، وتُذكَرُ
+                                    في إصْداراتٍ لاحقةٍ مِنَ الكِتاب. ضَعْ ذَلكَ نُصبَ عَيْنيكْ خِلالَ قِراءتِكَ
+                                    للكِتابْ.</p>
+                            </div>
+                            <a class="btn btn-secondary book-page-cart add-alert d-flex justify-content-center mx-auto pt-2"
+                                id="btn-cart" href=".">
+                                <span class="font-weight-bold">إضافة
+                                    للعربة</span>
+                                <i class="fas fa-cart-plus mt-1 mr-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="bookModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close px-2 py-1" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carousel-modal" class="carousel slide" data-ride=false>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/book1/freelance-1.png" alt="book1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/book1/freelance-2.png" alt="book1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/book1/freelance-3.png" alt="book1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/book1/freelance-4.png" alt="book1">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-modal" role="button" data-slide="prev">
+                                    <i class="fas fa-angle-right fa-3x custom-prev-next"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-modal" role="button"
+                                    data-slide="next">
+                                    <i class="fas fa-angle-left fa-3x custom-prev-next"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact-us -->
+        <section id="contact-us">
+            <div class="title text-center">
+                <h2>تواصل معنا</h2>
+            </div>
+            <div class="contact-us">
+                <div class="overlay-contact-us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md">
+                                <div class="map" id="map">
+                                    <iframe class="iframe"
+                                        src="https://maps.google.com/maps?q=%D8%B9%D9%85%D8%A7%D8%B1%20%D8%A8%D9%86%20%D9%8A%D8%A7%D8%B3%D8%B1%D8%8C%20%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B1%D8%8C%20%D9%82%D8%B3%D9%85%20%D8%A7%D9%84%D9%86%D8%B2%D9%87%D8%A9%D8%8C%20%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%E2%80%AC%D8%8C%20%D9%85%D8%B5%D8%B1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        width="500" height="240" frameborder="0" style="border:0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <ul class="list-unstyled contact-list">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt custom-contact-us-icon btn"
+                                            aria-hidden="true"></i>
+                                        <span class="contact-text pb-4">مصر - القاهره - شارع المطار.</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone custom-contact-us-icon btn" aria-hidden="true"></i>
+                                        <span class="contact-text pb-4">02-445666633</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope custom-contact-us-icon btn" aria-hidden="true"></i>
+                                        <span class="contact-text pb-4">kotobak@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="overlay-footer">
+                <div class="footer-body">
+                    <div class="container">
+                        <div class="row justify-content-center mx-auto">
+                            <div class="col-sm-12 col-md-6">
+                                <form id="newsletter">
+                                    <label>اشترك في النشرة البريدية</label>
+                                    <div class="input-group">
+                                        <input type="email" name="email" id="footer-email"
+                                            class="form-control text-right" required placeholder="..البريد الإلكتروني">
+                                        <button type="submit" class="icon custom-footer-icon">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <label>تابعنا</label>
+                                <ul class="follow list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="facebook btn icon custom-footer-icon rounded">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="twitter btn icon custom-footer-icon rounded">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="instagram btn icon custom-footer-icon rounded">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="copyright">
+                        جميع الحقوق محفوظة <span id="date"></span> &copy;
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

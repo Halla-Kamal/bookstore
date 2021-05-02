@@ -1,9 +1,15 @@
+
 import '@laylazi/bootstrap-rtl/dist/js/bootstrap.min.js';
 import '@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min.js';
-import '../sass/main.scss';
+import 'animate.css';
+import 'wowjs/dist/wow.min.js';
 import '@fortawesome/fontawesome-free/js/all.min.js';
+// import 'owl.carousel/dist/owl.carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.min.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
+import '../sass/main.scss';
 
 $(function () {
     // tooltip-cart-icon

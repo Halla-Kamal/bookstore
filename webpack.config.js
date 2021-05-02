@@ -86,6 +86,16 @@ module.exports = {
       template: "./src/index.html",
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "freelance-book.html",
+      template: "./src/freelance-book.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "ux-book.html",
+      template: "./src/ux-book.html",
+    }),
+
     new MiniCssExtractPlugin({
       filename: "css/style.css"
     }),
