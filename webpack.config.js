@@ -96,6 +96,11 @@ module.exports = {
       template: "./src/ux-book.html",
     }),
 
+    new HtmlWebpackPlugin({
+      filename: "sql-book.html",
+      template: "./src/sql-book.html",
+    }),
+
     new MiniCssExtractPlugin({
       filename: "css/style.css"
     }),

@@ -217,8 +217,7 @@ body {
             }
 
             img {
-
-                height: 60%;
+                max-height: 245px;
                 overflow: hidden;
             }
 
@@ -421,6 +420,110 @@ body {
     }
 }
 
+@media (max-width: 1199px) {
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    max-height: 200px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    .top-menu {
+        .navbar {
+            padding: 20px 60px !important;
+
+            .navbar-nav {
+                a {
+                    border-bottom: none !important;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    max-height: 190px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 945px){
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    max-height: 180px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    max-height: 150px !important;
+                }
+            }
+        }
+    }
+}
+@media (width: 768px){
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    height: 150px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    max-height: 280px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    max-height: 240px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 580px) {
+    .library {
+        .container-fluid {
+            .card {
+                img {
+                    max-height: 200px !important;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .map {
         text-align: center;
@@ -433,20 +536,5 @@ body {
 
     .contact-list {
         margin-right: 10% !important;
-    }
-}
-
-@media (max-width: 991px) {
-    .top-menu {
-        .navbar {
-            padding: 20px 60px !important;
-
-            .navbar-nav {
-                a {
-                    border-bottom: none !important;
-                    padding-right: 5px;
-                }
-            }
-        }
     }
 }

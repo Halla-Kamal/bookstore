@@ -68,7 +68,7 @@
             padding-right: 10%;
 
             .text-icon {
-                color: $main-color-dark;
+                color: $main-color-dark-book-page;
                 background-color: $bg-color;
                 padding: 10px;
                 width: 45px;
@@ -99,22 +99,22 @@
                 }
 
                 &::-webkit-scrollbar-track {
-                    border: 1px solid $main-color-dark;
+                    border: 1px solid $main-color-dark-book-page;
                     border-radius: 10px;
                 }
 
                 &::-webkit-scrollbar-thumb {
-                    background: $main-color-dark;
+                    background: $main-color-dark-book-page;
                     border-radius: 10px;
                 }
 
                 &::-webkit-scrollbar-thumb:hover {
-                    background: $main-color-dark;
+                    background: $main-color-dark-book-page;
                 }
             }
 
             .book-page-cart {
-                color: $main-color-dark;
+                color: $main-color-dark-book-page;
                 background-color: $bg-color;
                 border: none;
                 width: 150px;
@@ -125,7 +125,7 @@
                 &:hover,
                 &:active,
                 &:focus {
-                    background-color: $main-color-dark;
+                    background-color: $main-color-book-page;
                     color: $bg-color;
                     cursor: pointer;
                 }
